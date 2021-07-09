@@ -1,0 +1,189 @@
+.container__blocks__right {
+    flex: 1;
+
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+
+        .right-block__items {
+            flex: 1;
+
+            &__head {
+                height: 50px;
+                display: flex;
+                @include tablet {
+                    margin-bottom: 16px;
+                }
+
+                &__info-items {
+                    display: flex;
+                    align-items: center;
+                    font-weight: normal;
+                    font-size: 13px;
+                    line-height: 210%;
+                    color: $grey;
+                    cursor: default;
+                    @include tablet {
+                        margin-left: 8px;
+                    }
+                    @include mobile {
+                        display: none;
+                    }
+                }
+
+                &__filters {
+                    margin-left: 0;
+                    margin-right: auto;
+                    display: none;
+                    @include mobile {
+                        display: flex;
+                    }
+                }
+
+                &__sort-by {
+                    margin-left: auto;
+                    margin-right: 11px;
+                    @include xs-mobile {
+                        margin: 0;
+                    }
+                    @include mobile {
+                        margin: 0;
+                    }
+                }
+
+                &__show {
+                    @include tablet {
+                        display: none;
+                    }
+                }
+
+                &__show,
+                &__sort-by,
+                &__filters {
+                    border: 2px solid $grey;
+                    border-radius: 2px;
+                    width: 179px;
+                    font-weight: 600;
+                    font-size: 13px;
+                    line-height: 210%;
+                    cursor: pointer;
+                    transition: $transitionTime;
+                    @extend %centeringElement;
+                    @include mobile {
+                        width: 140px;
+                    }
+                    &:hover {
+                        background-color: $greyblue;
+                        border: 2px solid $greyblue;
+                    }
+                    &__name {
+                        opacity: 0.7;
+                    }
+                    &__select {
+                        margin-left: 3px;
+                        margin-right: 10px;
+                    }
+                    &__arrow {
+                        display: flex;
+                        align-items: center;
+                    }
+                }
+
+                &__button-tile {
+                    margin-left: 20px;
+                }
+                .container-head-button__active {
+                    svg {
+                        rect {
+                            fill: $black;
+                            stroke: $black;
+                        }
+                    }
+                }
+                .container-head-button {
+                    background: none;
+                    cursor: pointer;
+                    border: none;
+                    svg {
+                        rect {
+                            transition: $transitionTime;
+                        }
+                    }
+                    @include mobile {
+                        display: none;
+                    }
+                    &:hover {
+                        svg {
+                            rect {
+                                fill: $black;
+                                stroke: $black;
+                            }
+                        }
+                    }
+                }
+            }
+            &__filtering-shortcuts {
+                margin-top: 5px;
+                margin-bottom: 5px;
+                display: flex;
+                flex-wrap: wrap;
+                @include tablet {
+                    display: none;
+                }
+
+                .filtering-shortcuts-slyle {
+                    width: auto;
+                    font-weight: 600;
+                    font-size: 13px;
+                    line-height: 210%;
+                    height: 38px;
+                    display: flex;
+                    align-items: center;
+                    border: 1px solid $grey;
+                    border-radius: 2px;
+                    padding-left: 17px;
+                    padding-right: 17px;
+                    transition: $transitionTime;
+                    margin-right: 8px;
+                    cursor: pointer;
+                    &:hover {
+                        border: 1px solid $greyblue;
+                        background-color: $greyblue;
+                    }
+                    &__indicator {
+                        margin-left: 5px;
+                        margin-right: 8px;
+                    }
+                    &__close {
+                        display: flex;
+                        align-items: center;
+                    }
+                }
+            }
+            &__products {
+                overflow: hidden;
+                &__wrapper {
+                    display: flex;
+                    flex-wrap: wrap;
+                    .product-card {
+                        flex: 1;
+                    }
+                }
+            }
+            &__banner,
+            &__compare-products,
+            &__wish-list {
+                display: none;
+                @include mobile {
+                    display: block;
+                }
+            }
+            &__banner {
+                @include mobile {
+                    width: 234px;
+                    margin: auto;
+                }
+            }
+        }
+    }
+}

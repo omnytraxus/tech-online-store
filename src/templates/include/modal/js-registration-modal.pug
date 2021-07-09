@@ -1,0 +1,29 @@
+.registration-modal(id='modal')
+    .registration-modal__wrapper
+        form.registration-modal__wrapper__form.form-items
+            .form-items__title.modal-title Registered Customers
+            .form-items__text.modal-text If you have an account, sign in with your email address.
+            label.form-items__label-email(for="modal-email") Email
+                p *
+            input.form-items__input-email(type="email" placeholder="Email" id="modal-email")
+            label.form-items__label-password(for="modal-password") Password
+                p *
+            input.form-items__input-password(type="password" placeholder="Password" id="modal-password")
+            .form-items__sign-in
+                button.form-items__sign-in__button.modal-button.interface-button(type="submit") Sign in
+                a.form-items__sign-in__forgot-password(href="#") Forgot Your Password?
+        .registration-modal__wrapper__new-customer.new-customer-items
+            .new-customer-items__title.modal-title New Customer? 
+            .new-customer-items__text.modal-text
+                |Creating an account has many benefits:
+                br
+                br
+                |•  Check out faster
+                br
+                |•  Keep more than one address
+                br
+                |•  Track orders and more
+            button.new-customer-items__button.modal-button.interface-button Create An Account
+                
+
+

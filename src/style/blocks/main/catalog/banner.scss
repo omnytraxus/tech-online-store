@@ -1,0 +1,17 @@
+.banner {
+    @include mobile {
+        display: none;
+    }
+    &__wrapper{
+        max-width: $maxWidth;
+        overflow: hidden;
+        margin: auto;
+        margin-top: 0;
+        &__link {
+            width: 100%;
+            img {
+                width: 100%;
+            }
+        }
+    }
+}

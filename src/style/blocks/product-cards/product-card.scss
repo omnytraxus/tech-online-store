@@ -1,0 +1,177 @@
+.product-card {
+    max-width: 300px;
+    min-width: 215px;
+    height: 346px;
+    overflow: hidden;
+    background-color: $white;
+    transition: $transitionTime;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @include tablet {
+        max-width: 215px;
+        min-width: 168px;
+    }
+    @include xs-mobile {
+        max-width: 320px;
+        min-width: 215px;
+        margin-bottom: 20px;
+    }
+
+    &__wrapper {
+        width: 75%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__items {
+        width: 100%;
+
+        &__presence-indicator {
+            margin-top: 2px;
+            margin-bottom: 2px;
+            margin-left: 7px;
+            cursor: default;
+
+            &__in-stock {
+                display: flex;
+                align-items: center;
+
+                div {
+                    text-align: center;
+                    width: 46px;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 10px;
+                    line-height: 210%;
+                    margin-left: 2px;
+                    color: $green;
+                }
+            }
+
+            &__check-availability {
+                display: flex;
+                align-items: center;
+
+                div {
+                    text-align: center;
+                    width: 87px;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 10px;
+                    line-height: 210%;
+                    margin-left: 6px;
+                    color: $red;
+                }
+            }
+        }
+
+        &__product-image {
+            max-width: 200px;
+            min-width: 100px;
+            max-height: 150px;
+            min-height: 100px;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: auto;
+            img {
+                @include tablet {
+                    width: 120px;
+                }
+                @include xs-mobile {
+                    width: 160px;
+                }
+            }
+        }
+
+        &__reviews {
+            margin-top: 3px;
+            cursor: default;
+            height: 30px;
+            display: flex;
+            align-items: center;
+            @include tablet {
+                flex-direction: column;
+                margin-bottom: 15px;
+            }
+            @include xs-mobile {
+                flex-direction: row;
+            }
+            &__counter-reviews {
+                margin-left: 7px;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 12px;
+                line-height: 210%;
+                color: $grey;
+                @include tablet {
+                    font-size: 10px;
+                    line-height: 210%;
+                    margin-left: 0px;
+                }
+                @include xs-mobile {
+                    margin-left: 10px;
+                }
+            }
+        }
+
+        &__product-name {
+            text-decoration: none;
+            color: $black;
+            padding-top: 5px;
+            height: 60px;
+            width: 100%;
+            overflow: hidden;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 13px;
+            line-height: 19px;
+            overflow: hidden;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            transition: $transitionTime;
+            &:hover {
+                color: $blue;
+            }
+        }
+
+        &__product-prise {
+            height: 75px;
+            width: 185px;
+            padding-top: 15px;
+            cursor: default;
+
+            &__old {
+                width: 100%;
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 14px;
+                line-height: 140%;
+                text-decoration-line: line-through;
+                color: $darkgrey;
+            }
+            &__new {
+                width: 100%;
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 18px;
+                line-height: 140%;
+                color: $black;
+            }
+        }
+    }
+}
+
+.presence-indicator--display-none {
+    display: none;
+}

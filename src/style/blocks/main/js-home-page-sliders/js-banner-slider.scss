@@ -1,0 +1,86 @@
+.js-banner-slider {
+    position: relative;
+    max-width: $maxWidth;
+    margin: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    @include tablet {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    @include mobile {
+        margin-top: 10px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .arrow {
+        border: 1px solid $white;
+        border-width: 0 2px 2px 0;
+        display: inline-block;
+        padding: 3px;
+    }
+    .swiper-buttons__button-prev {
+        position: absolute;
+        z-index: 9;
+        top: calc(50% - (48px) / 2);
+        height: 48px;
+        width: 36px;
+        background: $lightblack;
+        border-radius: 0px 30px 30px 0px;
+        transform: rotate(0deg);
+        cursor: pointer;
+        @extend %centeringElement;
+        @include mobile {
+            opacity: 0.8;
+            top: calc(50% - (38px) / 2);
+            height: 38px;
+            width: 26px;
+        }
+
+        &__arrow-left {
+            transform: rotate(135deg);
+            -webkit-transform: rotate(135deg);
+        }
+    }
+    .swiper-buttons__button-next {
+        position: absolute;
+        z-index: 9;
+        right: 10px;
+        top: calc(50% - (48px) / 2);
+        height: 48px;
+        width: 36px;
+        background: $lightblack;
+        border-radius: 0px 30px 30px 0px;
+        transform: rotate(-180deg);
+        cursor: pointer;
+        @extend %centeringElement;
+        @include tablet {
+            right: 20px;
+        }
+        @include mobile {
+            right: 15px;
+            opacity: 0.8;
+            top: calc(50% - (38px) / 2);
+            height: 38px;
+            width: 26px;
+        }
+
+        &__arrow-right {
+            transform: rotate(135deg);
+            -webkit-transform: rotate(135deg);
+        }
+    }
+}
+
+.js-banner-slider__container {
+    position: relative;
+    max-width: $maxWidth;
+    overflow: hidden;
+    height: auto;
+
+    .js-banner-slider__slide__link__image {
+        height: auto;
+        width: 100%;
+    }
+}

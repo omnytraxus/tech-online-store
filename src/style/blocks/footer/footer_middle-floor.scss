@@ -1,0 +1,123 @@
+.footer__middle-floor {
+    margin-top: 46px;
+
+    &__items {
+        display: flex;
+        @extend %padding10px;
+        @include tablet {
+            flex-direction: column;
+        }
+        &__information,
+        &__pcParts,
+        &__desktopPc,
+        &__laptops,
+        &__address {
+            cursor: pointer;
+            @include tablet {
+                height: 30px;
+            }
+        }
+        .footer-links {
+            display: flex;
+            flex-direction: column;
+            margin-right: 94px;
+            @include tablet {
+                margin-bottom: 15px;
+                overflow: hidden;
+                border-bottom: 1px solid $grey;
+                margin-right: 0;
+            }
+            a {
+                text-decoration: none;
+                color: $white;
+                transition: $transitionTime;
+            }
+            &__title {
+                font-weight: bold;
+                font-style: normal;
+                font-size: 14px;
+                line-height: 100%;
+                opacity: 0.5;
+                margin-bottom: 24px;
+                display: flex;
+                align-items: center;
+                &__arrow-up {
+                    display: none;
+                    transform: rotate(180deg);
+                    @include tablet {
+                        display: none;
+                    }
+                }
+                &__arrow-down {
+                    display: none;
+                    @include tablet {
+                        display: block;
+                    }
+                }
+                svg {
+                    margin-left: auto;
+                    margin-right: 0;
+                }
+                @include tablet {
+                    margin-bottom: 15px;
+                    opacity: 1;
+                }
+                &:hover {
+                    opacity: 1;
+                }
+            }
+            &__link {
+                font-style: normal;
+                font-weight: normal;
+                font-size: 13px;
+                line-height: 140%;
+                margin-bottom: 4px;
+                @include tablet {
+                    margin-left: 15px;
+                    margin-bottom: 10px;
+                    font-weight: 300;
+                    font-size: 12px;
+                    opacity: 0.9;
+                }
+                &:hover {
+                    opacity: 0.5;
+                }
+            }
+        }
+        .footer__middle-floor__items__address {
+            color: $white;
+            width: 301px;
+            @include tablet {
+                width: 100%;
+                cursor: pointer;
+            }
+            .footer-links__title {
+                @include tablet {
+                    cursor: pointer;
+                    transition: $transitionTime;
+                }
+                &:hover {
+                    opacity: 0.5;
+                    @include tablet {
+                        opacity: 1;
+                    }
+                }
+            }
+            div {
+                cursor: default;
+                &:hover {
+                    opacity: 1;
+                }
+            }
+            a {
+                text-decoration: none;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 13px;
+                line-height: 140%;
+                margin-bottom: 4px;
+                color: $blue;
+            }
+        }
+    }
+}

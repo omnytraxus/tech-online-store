@@ -1,0 +1,21 @@
+.interface-button {
+    border: 2px solid $blue;
+    box-sizing: border-box;
+    border-radius: 50px;
+    height: 37px;
+    width: 121px;
+    background: none;
+    color: $blue;
+    font-family: $fontFamily;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 21px;
+    cursor: pointer;
+    transition: $transitionTime;
+    @extend %centeringElement;
+    &:hover {
+        color: $white;
+        background: $blue;
+    }
+}

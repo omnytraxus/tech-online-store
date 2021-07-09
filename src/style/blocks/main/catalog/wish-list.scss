@@ -1,0 +1,29 @@
+.wish-list {
+    background-color: $greyblue;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 7px;
+
+    &__title {
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 24px;
+        height: 50px;
+        @extend %centeringElement;
+        cursor: default;
+    }
+    &__text {
+        cursor: default;
+        display: flex;
+        align-items: center;
+        height: 47px;
+        text-align: center;
+        font-weight: normal;
+        font-size: 13px;
+        line-height: 130%;
+        margin-bottom: 16.5px;
+        width: 203px;
+    }
+}

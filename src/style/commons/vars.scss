@@ -1,0 +1,37 @@
+$maxWidth: 1398px;
+$maxTabletWidth: 996px;
+$maxMobileWidth: 767px;
+$maxExtraSmallWidth: 374px;
+$maxWidthLittle: 1160px;
+$windowSize: 1436px;
+$fontFamily: 'Poppins', sans-serif;
+$black: rgb(0, 0, 0);
+$white: rgb(255, 255, 255);
+$grey: #a2a6b0;
+$lightgrey: #cacdd8;
+$darkgrey: #666666;
+$blue: #0156ff;
+$lightblack: #252931;
+$green: #78a962;
+$red: #c94d3f;
+$brightRed: #ff0000;
+$greyblue: #f5f7ff;
+$darkblue: #272560;
+$transitionTime: 0.3s;
+%padding20px {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+%padding15px {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+%padding10px {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+%centeringElement {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

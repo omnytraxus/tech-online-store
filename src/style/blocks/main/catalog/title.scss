@@ -1,0 +1,19 @@
+.title {
+    &__wrapper {
+        max-width: $maxWidth;
+        margin: auto;
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-bottom: 19px;
+
+        &__text {
+            font-weight: 600;
+            font-size: 32px;
+            line-height: 48px;
+            @include tablet {
+                font-size: 18px;
+                line-height: 27px;
+            }
+        }
+    }
+}

@@ -1,0 +1,78 @@
+.container__blocks__right
+    .container__blocks__right__wrapper
+        .container__blocks__right__wrapper__items.right-block__items
+            .right-block__items__head
+
+                .right-block__items__head__info-items Items 1-35 of 61
+
+                .right-block__items__head__filters.container-head-select
+                    .right-block__items__head__show__select.container-head-select__select Filter
+
+                .right-block__items__head__sort-by.container-head-select
+                    .right-block__items__head__sort-by__name.container-head-select__name Sort By:
+                    .right-block__items__head__sort-by__select.container-head-select__select Position
+                    .right-block__items__head__sort-by__arrow.container-head-select__arrow
+                        svg.right-block__items__head__sort-by__arrow__down(width="6" height="5" viewBox="0 0 6 5")
+                            path(d="M5 1.76929L3 3.76929L1 1.76929" stroke="black" stroke-width="1.6" stroke-linecap="round")
+
+                .right-block__items__head__show.container-head-select
+                    .right-block__items__head__show__name.container-head-select__name Show:
+                    .right-block__items__head__show__select.container-head-select__select 35 per page
+                    .right-block__items__head__show__arrow.container-head-select__arrow
+                        svg.right-block__items__head__show__arrow__down(width="6" height="5" viewBox="0 0 6 5")
+                            path(d="M5 1.76929L3 3.76929L1 1.76929" stroke="black" stroke-width="1.6" stroke-linecap="round")
+
+
+
+                button.right-block__items__head__button-tile.container-head-button.container-head-button__active
+                    svg(width="32" height="32" viewBox="0 0 32 32")
+                        rect(x="6.90039" y="6.90002" width="3.57143" height="3.57143" fill="#A2A6B0" stroke="#A2A6B0")
+                        rect(x="6.90039" y="14.2143" width="3.57143" height="3.57143" fill="#A2A6B0" stroke="#A2A6B0")
+                        rect(x="6.90039" y="21.5286" width="3.57143" height="3.57143" fill="#A2A6B0" stroke="#A2A6B0")
+                        rect(x="14.2139" y="14.2143" width="3.57143" height="3.57143" fill="#A2A6B0" stroke="#A2A6B0")
+                        rect(x="14.2139" y="21.5286" width="3.57143" height="3.57143" fill="#A2A6B0" stroke="#A2A6B0")
+                        rect(x="14.2139" y="6.90002" width="3.57143" height="3.57143" fill="#A2A6B0" stroke="#A2A6B0")
+                        rect(x="21.5283" y="14.2143" width="3.57143" height="3.57143" fill="#A2A6B0" stroke="#A2A6B0")
+                        rect(x="21.5283" y="21.5286" width="3.57143" height="3.57143" fill="#A2A6B0" stroke="#A2A6B0")
+                        rect(x="21.5283" y="6.90002" width="3.57143" height="3.57143" fill="#A2A6B0" stroke="#A2A6B0")
+
+                button.right-block__items__head__button-line.container-head-button
+                    svg(width="32" height="32" viewBox="0 0 32 32")
+                        rect(x="4.57129" y="21.0286" width="9.14286" height="2.74286" fill="#A2A6B0" stroke="#A2A6B0")
+                        rect(x="4.57129" y="8.22858" width="21.9429" height="2.74286" fill="#A2A6B0" stroke="#A2A6B0")
+                        rect(x="4.57129" y="14.6286" width="16.4571" height="2.74286" fill="#A2A6B0" stroke="#A2A6B0")
+
+            .right-block__items__filtering-shortcuts
+                .right-block__items__filtering-shortcuts__customPcs.filtering-shortcuts-slyle CUSTOM PCS
+                    .filtering-shortcuts-slyle__indicator (24)
+                    .filtering-shortcuts-slyle__close
+                        svg(width="20" height="20" viewBox="0 0 20 20")
+                            circle(cx="10" cy="10" r="10" fill="#C94D3F")
+                            path(d="M7 7L13.5 13.5" stroke="white" stroke-linecap="round")
+                            path(d="M13.5 7L7 13.5" stroke="white" stroke-linecap="round")
+                .right-block__items__filtering-shortcuts__hpPcs.filtering-shortcuts-slyle HP/COMPAQ PCS
+                    .filtering-shortcuts-slyle__indicator (24)
+                    .filtering-shortcuts-slyle__close
+                        svg(width="20" height="20" viewBox="0 0 20 20")
+                            circle(cx="10" cy="10" r="10" fill="#C94D3F")
+                            path(d="M7 7L13.5 13.5" stroke="white" stroke-linecap="round")
+                            path(d="M13.5 7L7 13.5" stroke="white" stroke-linecap="round")
+                .right-block__items__filtering-shortcuts__clear.filtering-shortcuts-slyle Clear All
+
+            include products-list.pug
+            
+            include pagination.pug
+
+            .right-block__items__compare-products
+                include compare-products.pug
+
+            .right-block__items__wish-list
+                include wish-list.pug
+
+            .right-block__items__banner
+                include banner2.pug
+
+            include information.pug
+
+
+            

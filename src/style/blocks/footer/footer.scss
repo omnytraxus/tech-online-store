@@ -1,0 +1,21 @@
+.footer__wrapper {
+    position: relative;
+    max-width: $maxWidth;
+    height: auto;
+    margin: auto;
+
+    .footer_items {
+        padding-top: 47px;
+        height: 100%;
+        @include tablet {
+            padding: 35px 55px 35px 55px;
+        }
+        @include mobile {
+            padding: 35px 15px 35px 15px;
+        }
+    }
+}
+
+@import 'footer_top-floor.scss';
+@import 'footer_middle-floor.scss';
+@import 'footer_bottom-floor.scss';

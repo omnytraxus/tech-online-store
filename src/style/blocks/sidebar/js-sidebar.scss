@@ -1,0 +1,106 @@
+.sidebar {
+    position: fixed;
+    background-color: $white;
+    height: 100%;
+    width: 0%;
+    z-index: 999;
+    overflow: hidden;
+
+    &__wrapper {
+        width: 100%;
+
+        &__pages {
+            display: flex;
+            flex-direction: column;
+
+            &__head {
+                width: 90%;
+                height: 60px;
+                display: flex;
+                align-items: center;
+                border-bottom: 1px solid $lightgrey;
+                margin: auto;
+
+                &__logo {
+                    width: 71px;
+                    height: 100%;
+                    display: flex;
+                    align-items: center;
+
+                    svg {
+                        height: 35px;
+                        width: 35px;
+                        path {
+                            fill: $blue;
+                        }
+                    }
+                }
+                .sidebar-close-button {
+                    margin-left: auto;
+                    margin-bottom: 0;
+                    display: flex;
+                    align-items: center;
+                    width: 50px;
+                    height: 100%;
+                    svg {
+                        margin-left: auto;
+                        margin-right: 0;
+                    }
+                }
+            }
+
+            &__main-page {
+                width: 100%;
+            }
+
+            &__secondary-page {
+                width: 0%;
+            }
+
+            &__main-page,
+            &__secondary-page {
+                position: absolute;
+                background-color: $white;
+                margin-top: 80px;
+                height: 100%;
+                font-weight: normal;
+                font-size: 13px;
+                line-height: 34px;
+                overflow: hidden;
+
+                &__item {
+                    display: flex;
+                    align-items: center;
+                    padding-left: 7%;
+                    padding-right: 7%;
+                    text-decoration: none;
+                    color: $black;
+                    cursor: pointer;
+                    svg {
+                        margin-left: auto;
+                        margin-right: 0;
+                    }
+                }
+
+                &__back-button {
+                    background-color: $greyblue;
+                    svg {
+                        margin-right: 10px;
+                        margin-left: 0;
+                        transform: rotate(180deg);
+                    }
+                    &__text {
+                        margin-right: auto;
+                        margin-left: 0;
+                    }
+                }
+                .sidebar-ourDeals-button {
+                    margin-left: 7%;
+                    width: 165px;
+                    height: 35px;
+                    margin-top: 10px;
+                }
+            }
+        }
+    }
+}

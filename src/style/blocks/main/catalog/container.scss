@@ -1,0 +1,36 @@
+.container {
+    &__wrapper {
+        max-width: $maxWidth;
+        margin: auto;
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-bottom: 35px;
+        @include tablet {
+            padding-left: 9px;
+            padding-right: 9px;
+        }
+        &__items {
+            display: flex;
+        }
+    }
+    &__advantages {
+        background-color: $greyblue;
+    }
+}
+.catalog-button {
+    width: 200px;
+    height: 37px;
+    color: $grey;
+    border: 2px solid $grey;
+    cursor: pointer;
+    margin: auto;
+    margin-bottom: 15px;
+    &:hover {
+        background: none;
+        border: 2px solid $black;
+        color: $black;
+    }
+}
+
+@import 'container-left-block.scss';
+@import 'container-right-block.scss';

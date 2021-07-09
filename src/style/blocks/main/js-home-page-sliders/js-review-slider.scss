@@ -1,0 +1,108 @@
+.js-review-slider {
+    @extend %padding15px;
+    @include tablet {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    @include mobile {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    &__wrapper {
+        max-width: $maxWidthLittle - 38px;
+        background-color: $greyblue;
+        margin: auto;
+        padding-left: 19px;
+        padding-right: 19px;
+        padding-bottom: 57px;
+        margin-top: 50px;
+
+        &__items {
+            margin: auto;
+            &__swiper-container {
+                &__swiper-wrapper {
+                    &__swiper-slide {
+                        .swiper-slide__review {
+                            display: flex;
+                            max-width: 922px;
+                            max-height: 175px;
+                            margin: auto;
+                            margin-top: 46px;
+                            cursor: default;
+                            overflow: hidden;
+
+                            &__quotes {
+                                font-weight: normal;
+                                font-size: 96px;
+                                line-height: 144px;
+                                margin-right: 30px;
+                                margin-top: -34px;
+                                @include mobile {
+                                    font-size: 52px;
+                                    margin-top: -48px;
+                                }
+                            }
+                            &__text {
+                                font-weight: normal;
+                                font-size: 18px;
+                                line-height: 27px;
+                                max-width: 830px;
+                                display: -webkit-box;
+                                -webkit-line-clamp: 4;
+                                -webkit-box-orient: vertical;
+                                @include mobile {
+                                    font-size: 13px;
+                                    line-height: 19px;
+                                    -webkit-line-clamp: 8;
+                                }
+                            }
+                        }
+                        .swiper-slide__reviewer {
+                            font-weight: normal;
+                            font-size: 14px;
+                            line-height: 21px;
+                            cursor: default;
+                            max-width: 922px;
+                            margin: auto;
+                            text-align: right;
+                            margin-top: 11px;
+                            @include mobile {
+                                font-size: 12px;
+                            }
+                        }
+                    }
+                }
+            }
+            &__interface {
+                position: relative;
+                max-width: 922px;
+                margin: auto;
+                display: flex;
+                align-items: center;
+                margin-top: 29px;
+
+                &__button {
+                    width: 182px;
+                    @include xs-mobile {
+                        margin: auto;
+                        margin-top: 40px;
+                    }
+                }
+                div {
+                    right: 0;
+                    @include xs-mobile {
+                        top: 20%;
+                        left: 50%;
+                        margin-right: -50%;
+                        transform: translate(-50%, -50%);
+                    }
+                    span {
+                        height: 12px;
+                        width: 12px;
+                        margin-left: 10px;
+                    }
+                }
+            }
+        }
+    }
+}

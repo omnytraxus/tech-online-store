@@ -1,0 +1,86 @@
+.blog {
+    @include tablet {
+        display: none;
+    }
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 31px;
+    
+    &__wrapper {
+        max-width: $maxWidth;
+        margin: auto;
+        overflow: hidden;
+
+        &__title {
+            font-weight: 600;
+            font-size: 22px;
+            line-height: 33px;
+            margin-bottom: 21px;
+            cursor: default;
+        }
+
+        &__items {
+            display: flex;
+            flex-wrap: wrap;
+
+            &__card {
+                width: 225px;
+                overflow: hidden;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                margin-right: 4px;
+                margin-left: 4px;
+                margin-bottom: 20px;
+
+                &__img-link {
+                    height: 151px;
+                    overflow: hidden;
+                    img {
+                        transition: $transitionTime;
+                        &:hover {
+                            transform: scale(1.1);
+                        }
+                    }
+                }
+                &__text {
+                    text-align: center;
+
+                    &__wrapper {
+                        margin-top: 10px;
+                        padding-left: 20px;
+                        padding-right: 20px;
+                        height: 130px;
+                        overflow: hidden;
+                        display: -webkit-box;
+                        -webkit-line-clamp: 7;
+                        -webkit-box-orient: vertical;
+                        &:hover {
+                            .blog__wrapper__items__card__text__wrapper__link {
+                                color: $blue;
+                            }
+                        }
+                        &__link {
+                            font-weight: normal;
+                            font-size: 12px;
+                            line-height: 18px;
+                            text-decoration: none;
+                            color: $black;
+                            transition: $transitionTime;
+                        }
+                    }
+
+                    &__date {
+                        margin-top: 6px;
+                        margin-bottom: 10px;
+                        font-weight: normal;
+                        font-size: 10px;
+                        line-height: 15px;
+                        color: $grey;
+                        cursor: default;
+                    }
+                }
+            }
+        }
+    }
+}

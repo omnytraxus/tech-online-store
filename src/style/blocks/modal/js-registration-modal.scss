@@ -1,0 +1,84 @@
+.registration-modal {
+    cursor: default;
+    background-color: $greyblue;
+    padding: 0;
+    display: none;
+
+    &__wrapper {
+        padding: 37px;
+        cursor: default;
+        .modal-title {
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 27px;
+            margin-bottom: 10px;
+        }
+        .modal-text {
+            font-weight: 300;
+            font-size: 14px;
+            line-height: 30px;
+        }
+        .modal-button {
+            margin-right: 23px;
+            width: 151px;
+            background-color: $blue;
+            color: $white;
+            transition: $transitionTime;
+            &:hover {
+                background: none;
+                color: $blue;
+            }
+        }
+        .form-items {
+            display: flex;
+            flex-direction: column;
+            cursor: default;
+
+            &__sign-in {
+                display: flex;
+                align-items: center;
+                margin-top: 30px;
+
+                &__forgot-password {
+                    font-weight: normal;
+                    font-size: 14px;
+                    line-height: 20px;
+                    text-decoration: none;
+                    color: $blue;
+                }
+            }
+            label {
+                font-weight: 600;
+                font-size: 13px;
+                line-height: 210%;
+                margin-top: 20px;
+                display: flex;
+                align-items: center;
+                height: 30px;
+                p {
+                    margin-left: 3px;
+                    color: $red;
+                }
+            }
+            input {
+                height: 50px;
+                font-family: $fontFamily;
+                font-style: normal;
+                font-weight: 300;
+                font-size: 14px;
+                line-height: 20px;
+                padding-left: 17px;
+                border-radius: 4px;
+                border: 1px solid $grey;
+            }
+        }
+        .new-customer-items {
+            margin-top: 30px;
+
+            &__button {
+                width: 208px;
+                margin-top: 30px;
+            }
+        }
+    }
+}

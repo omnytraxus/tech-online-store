@@ -1,0 +1,108 @@
+.js-new-products-slider {
+    position: relative;
+    overflow: hidden;
+    max-width: $maxWidth;
+    margin: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 37px;
+    @include tablet {
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-top: 16px;
+    }
+
+    .js-new-products-slider__title {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        @include xs-mobile {
+            flex-wrap: wrap;
+            margin-bottom: 10px;
+        }
+        &__slider-name {
+            font-style: normal;
+            font-weight: 600;
+            font-size: 22px;
+            line-height: 33px;
+            cursor: default;
+        }
+        &__catalog-link {
+            font-style: normal;
+            font-weight: normal;
+            font-size: 13px;
+            line-height: 115%;
+            color: $blue;
+            margin-left: auto;
+            margin-right: 0;
+            @include xs-mobile {
+                margin-left: 0;
+                margin-right: auto;
+            }
+        }
+    }
+
+    .arrow {
+        border: 1px solid $white;
+        border-width: 0 2px 2px 0;
+        display: inline-block;
+        padding: 3px;
+    }
+    .swiper-buttons__button-prev {
+        position: absolute;
+        left: 10px;
+        top: calc(50% - (48px) / 2);
+        z-index: 9;
+        height: 48px;
+        width: 36px;
+        background: $lightblack;
+        border-radius: 0px 30px 30px 0px;
+        transform: rotate(0deg);
+        cursor: pointer;
+        opacity: 0.7;
+        @extend %centeringElement;
+        @include tablet {
+            display: none;
+        }
+        &__arrow-left {
+            transform: rotate(135deg);
+            -webkit-transform: rotate(135deg);
+        }
+    }
+    .swiper-buttons__button-next {
+        position: absolute;
+        right: 10px;
+        top: calc(50% - (48px) / 2);
+        z-index: 9;
+        height: 48px;
+        width: 36px;
+        background: $lightblack;
+        border-radius: 0px 30px 30px 0px;
+        transform: rotate(-180deg);
+        cursor: pointer;
+        opacity: 0.7;
+        @extend %centeringElement;
+        @include tablet {
+            display: none;
+        }
+        &__arrow-right {
+            transform: rotate(135deg);
+            -webkit-transform: rotate(135deg);
+        }
+    }
+}
+
+.js-new-products-slider__container {
+    position: relative;
+    width: $maxWidth;
+
+    .js-new-products-slider__wrapper {
+        width: $maxWidth;
+    }
+
+    .js-new-products-slider__slide__product-card {
+        width: 234px;
+        height: 346px;
+        overflow: hidden;
+    }
+}

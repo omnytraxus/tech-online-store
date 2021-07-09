@@ -1,0 +1,76 @@
+.zip-banner {
+    margin-bottom: 14px;
+    @extend %padding10px;
+    @include tablet {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    @include mobile {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    &__wrapper {
+        max-width: $maxWidth;
+        height: auto;
+        background-color: $greyblue;
+        margin: auto;
+        overflow: hidden;
+        @extend %centeringElement;
+
+        &__text {
+            display: flex;
+            align-items: center;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 120.5%;
+            color: $darkblue;
+            cursor: default;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            @include tablet {
+                font-size: 14px;
+                flex-direction: column;
+            }
+            &__not-link {
+                display: flex;
+                align-items: center;
+                @include tablet {
+                    margin-top: 15px;
+                }
+                @include xs-mobile {
+                    flex-direction: column;
+                }
+                &__bold {
+                    height: 24px;
+                    font-weight: bold;
+                    margin-right: 5px;
+                    margin-left: 11.5px;
+                    padding-left: 14.5px;
+                    border-left: 2px solid #00aeb8;
+                    @include tablet {
+                        border: none;
+                        margin: auto;
+                    }
+                }
+                &__normal {
+                    height: 24px;
+                    margin-right: 5px;
+                }
+            }
+
+            &__link {
+                margin-top: auto;
+                margin-bottom: 6px;
+                color: $darkblue;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 14px;
+                line-height: 120.5%;
+                @include tablet {
+                    margin: auto;
+                }
+            }
+        }
+    }
+}
